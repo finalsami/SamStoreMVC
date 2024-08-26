@@ -15,7 +15,7 @@ namespace SamStoreMVC.Models
         public decimal Price { get; set; }
         [Required]
         public string Description { get; set; } = "";
-        [MaxLength(100)]
+       
         public IFormFile? ImageFile { get; set; }
     }
 }

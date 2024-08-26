@@ -5,6 +5,7 @@ namespace SamStoreMVC.Models
 {
     public class Products
     {
+
         public int Id { get; set; }
         [MaxLength (100)]
         public string Name { get; set; } = "";
@@ -17,8 +18,6 @@ namespace SamStoreMVC.Models
         public string Description { get; set; } = "";
         [MaxLength(100)]
         public string ImageFileName { get; set; } = "";
-        public required string CreatedAt { get; set; }
-
-
+        public required DateTime CreatedAt { get; set; }
     }
 }
